@@ -1,0 +1,376 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, 
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+    background: transparent;
+    font-family: 'Lato', sans-serif;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* início do estilo*/
+.largura-desktop{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+.mobile{ display: none;}
+    .desktop{display: block;}
+header{ 
+    width: 100%;
+    height: 822px;
+    overflow: hidden;
+    background-image: url(../img/banner-principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: #FFF;
+}
+header h2{
+    font-size: 52px;
+    font-weight: bold;
+} 
+header spam{
+    font-size: 22px;
+}
+header li{ list-style:disc; padding: 8px;}
+
+.infra-iaas{
+    width: 100%;
+    overflow: hidden;
+    color: #444242;
+}
+.infra-iaas h2{
+    display: block;
+    width: 495px;
+    height: auto;
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 60px;
+}
+.infra-iaas p{
+    display: block;
+    width: 495px;
+    float: left;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.infra-iaas img{
+    float: right;
+    margin-top: -116px;
+}
+/* paas*/
+.infra-paas{
+    width: 100%;
+    overflow: hidden;
+    color: #444242;
+    background-image: url(../img/bkg-paas.jpg);
+    background-repeat: repeat-x;
+}
+.infra-paas img{
+    float: left;
+    margin-top: 31px;
+}
+.infra-paas h2{
+    display: block;
+    width: 492px;
+    height: auto;
+    float: right;
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 123px;
+}
+.infra-paas p{
+    display: block;
+    width: 492px;
+    height: auto;
+    float: right;
+    font-size: 18px;
+    line-height: 1.9;
+}
+/* Serviços */
+.onda{ 
+    width: 100%;
+    height: 125px;
+    background-image: url(../img/topo-bkg-serviços.png); 
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.servicos{
+    width: 100%;
+    background-image: url(../img/meio-bkg-serviços.png);
+    background-repeat: repeat-x;
+    height: 962px;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+.servicos h2{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight: normal;
+}
+.servico-unico{
+    width: 40%;
+    height: 420px;
+    float: left;
+    margin: 0 5%;
+}
+.servico-unico p{
+    display: block;
+    width: 410px;
+    margin-top: 20px;
+    line-height: 1.7;
+}
+.servico-unico img{margin: 10px 0;}
+
+/* Clientes */
+.clientes {
+    width: 100%;
+    height: 136px;
+    padding: 10px;
+    margin: 0 auto;
+    background: #f0f0f0;
+    align-content: center;
+    pointer-events: none;
+}
+.clientes > div {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.clientes img {
+    margin: 21px;
+    height: 70px;
+    width: auto;
+}
+
+/* Contato */
+footer{
+    width: 100%;
+    overflow: hidden;
+    background-color: #202020;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+footer h2{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 50px 0;
+    font-weight: normal;
+}
+.contato-esq{
+    display: block;
+    width: auto;
+    height: auto;
+    float: left;
+}
+footer img{
+clear: both;
+}
+.midias-sociais{ 
+    clear: both;
+    width: auto;
+    overflow:hidden;
+    text-align: center;
+}
+.midias-sociais p{margin: 10px; }
+.midias-sociais a{color: #FFF; }
+.midias-sociais img{margin: 10px} 
+form{
+    display: block;
+    width: 420px;
+    overflow: hidden;
+    float: right;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+/*form*/
+label {
+    display: block;
+    padding:15px 15px 0 0;
+    width:250px; 
+    height:15px;
+    font-size:16px;
+    margin:0px 0px 4px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+form input, form select, form textarea, form fieldset{
+    border: 1px solid #FFF;
+    background-color:#202020;
+    border-radius:10px;
+    font-size: 16px;
+    padding:5px; 
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: normal;
+}
+#enviar{clear:both;align:center;margin-left:100px;border:0px;}
+input[type=submit]{
+    background: #91bd3c;
+    Box-shadow: 0 1px 5px #333;
+    border:0;margin: 15px 0;padding:10px;
+    background:-webkit-linear-gradient(#b1dd5c, #91bd3c);
+}
+input:focus, textarea:focus{background:#202020; border-color:#FFF;}
+label:after{content:":";}
+fieldset>label:after{content:"";}
+.copyright{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 999px) {
+    .largura-desktop{width: 100%;margin: 0 auto;}
+    header{ 
+        height: 600px;
+        background-position: center bottom;
+    }
+    header img{ display: block; margin: 0 auto;}
+    header h2{text-align: center;font-size: 38px;} 
+    header spam{font-size: 18px;}
+    header ul{ margin: 0 auto;text-align: center;}
+    .infra-paas{ background-image: none; background-color: #d6e2fb;}
+    .infra-paas img{ display: none}
+    .infra-iaas img{ display: none}
+    .infra-paas h2{ width: 95%; text-align: center;margin-top: 23px;}
+    .infra-iaas h2{
+        width: 95%;
+        height: auto;
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 29px;
+        text-align: center;
+    }
+    .infra-paas p{
+        width: 95%;
+        height: auto;
+        float: none;
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-bottom: 29px;
+    }
+    .infra-iaas p{
+        width: 95%;
+        float: none;
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 0 auto;
+        padding-bottom: 29px;
+    }
+    .servicos{
+        width: 100%;
+        background-image: url(../img/servico-mobile.png);
+        background-repeat: repeat;
+        height: auto;
+        overflow: hidden;
+    }
+    .servico-unico{
+        width: 95%;
+        height: auto;
+        overflow: hidden;
+        float: none;
+        margin: 20px auto;
+    }
+    .servico-unico p{
+        width:100%;
+        margin-top: 20px auto;
+    }
+    .servico-unico img{display:block; margin:0 auto;width: 100%;max-width: 300px;}
+    .clientes { height: auto;}
+    .midias-sociais{ 
+        clear: both;
+        width: 100%;
+        overflow:hidden;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .midias-sociais img{display: block; margin: 5px;} 
+    .midias-sociais table{ margin: 0 auto; vertical-align:middle;} 
+    .midias-sociais table tr td{vertical-align:middle;} 
+    form{
+        width: 95%;
+        overflow: hidden;
+        float: none;
+        margin:0 auto;
+    }
+    label {
+        display: block !important;
+        padding:15px 15px 0 0;
+        width:100%;
+        max-width: 320px; 
+        margin: 0 auto;
+        height: auto;
+    }
+    form input, form textarea, form fieldset{
+        display: block;
+        width:100%;
+        max-width: 320px; 
+        margin: 0 auto;
+
+    }
+    #enviar{clear:both;align:center;margin: 0 auto;;border:0px; width: auto; height: auto;
+    }
+
+
+    .mobile{ display: block;}
+    .desktop{display: none;}
+    footer img{ display: none}
+
+}
+
